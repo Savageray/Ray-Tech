@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO -->
+  <title>RayTech Foundation - Portfolio</title>
+  <meta name="description" content="Explore RayTech Foundation's portfolio of web development, graphic design, CCTV installations, and document design projects in Nairobi, Kenya.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763649385/Company_logo_klukvu.png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Page-specific CSS -->
+  <link rel="stylesheet" href="./assets/css/port.css">
+  
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="./assets/css/global.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="navbar-logo">
+      <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763649385/Company_logo_klukvu.png" alt="RayTech Foundation Logo">
+      <span>RayTech Foundation</span>
+    </a>
+    <div class="navbar-toggle" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <nav class="navbar-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+  <!-- HERO -->
+   <section class="page-hero">
+  <div id="particles-js"></div> <!-- This is where the live particles will render -->
+  <div class="hero-overlay"></div>
+  <div class="hero-content container text-center">
+    <h1 class="big-title">RAYTECH FOUNDATION</h1>
+    <p class="tagline">Portfolio Showcase – Empowering Businesses Through Tech & Design</p>
+    <div class="hero-cta">
+      <!-- <a href="contact.html" class="btn-cta">Get a Free Quote</a>
+      <a href="services.html" class="btn-cta secondary">View Services</a> -->
+    </div>
+  </div>
+   </section>
+
+  <!-- STATS -->
+  <section class="container py-5">
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="stat-card p-4">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card p-4">
+          <div class="stat-number">94%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card p-4">
+          <div class="stat-number">4.7/5</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card p-4">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Service Categories</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PORTFOLIO -->
+  <section class="container py-5" id="portfolio">
+    <h2 class="mb-4">Featured Projects</h2>
+    <div class="d-flex justify-content-center mb-4 flex-wrap">
+      <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="Web Development">Web Development</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="Graphic Design">Graphic Design</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="CCTV Installation">CCTV</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="Document Design">Document Design</button>
+    </div>
+    <div class="portfolio-grid">
+<section class="portfolio-preview">
+  <div class="portfolio-cards">
+
+    <div class="portfolio-card" data-category="Web Development">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672961/Screenshot_2025-11-21_000639_mmz8b5.png" alt="Dog Tinder" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Web Development</span>
+        <h5>Dog Tinder – Pet Matchmaking Platform</h5>
+        <p>A visually engaging, single-page frontend website that allows dog owners to browse and match with other dogs for playdates or adoption. Focused on responsive design, modern UI, and smooth user interactions.</p>
+        <ul>
+          <li>One-page responsive layout for desktop and mobile</li>
+          <li>Interactive dog profiles with images and basic info</li>
+          <li>Swipe / like feature simulation for matching dogs</li>
+          <li>Clean, playful UI with attention to colors and typography</li>
+          <li>Lightweight, optimized for fast loading</li>
+        </ul>
+        <a href="https://savageray.github.io/Dog_demo_website/" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="Web Development">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763675627/Screenshot_2025-11-21_005256_cwgqyx.png" alt="Dog Tinder" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Web Development</span>
+        <h5>Zombiz – Business Consultation Website</h5>
+        <p>A clean and professional business consultation website designed to help
+           entrepreneurs access expert guidance, service information, and booking options. 
+          Built with a modern layout that communicates trust and credibility.</p>
+        <ul>
+          <li>Professional, business-oriented UI</li>
+          <li>Service sections for consulting packages</li>
+          <li>Appointment or contact CTA integration</li>
+          <li>Fully responsive on all devices</li>
+          <li>Fast-loading static website suitable for small businesses</li>
+        </ul>
+        <a href="" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="Web Development">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763674800/Screenshot_2025-11-21_003910_zidwel.png" alt="Dog Tinder" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Web Development</span>
+        <h5>DesignBell Website</h5>
+        <p>A sleek, modern website built for DesignBell, a design boutique. 
+          Showcases their services, portfolio, and brand identity 
+          with a focus on elegance, usability, and responsive design.</p>
+        <ul>
+          <li>Fully responsive layout for desktop, tablet, and mobile</li>
+          <li>Interactive portfolio section to highlight design work</li>
+          <li>Modern UI/UX with clean typography and layout</li>
+          <li>Integrated contact and inquiry forms for client engagement</li>
+          <li>Optimized for fast loading and smooth navigation</li>
+        </ul>
+        <a href="" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="Web Development">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763673708/Screenshot_2025-11-21_001924_core0b.png" alt="Dog Tinder" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Web Development</span>
+        <h5>Grub – Restaurant Website</h5>
+        <p>A responsive one-page website for a restaurant, designed to 
+          showcase the menu, promotions, and contact information. Focused on 
+          appealing visuals, user-friendly
+           navigation, and clear presentation of products.</p>
+        <ul>
+          <li>Menu display with images and prices</li>
+          <li>Promotional sections for special offers</li>
+          <li>Contact form for orders and inquiries</li>
+          <li>Responsive design for desktop, tablet, and mobile</li>
+          <li>Modern UI with appetizing visuals and brand colors</li>
+        </ul>
+        <a href="" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="Web Development">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672962/Screenshot_2025-11-21_000841_zruswx.png" alt="Demo POrtfolio" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Web Development</span>
+        <h5>Demo Portfolio of the Founder</h5>
+        <p>A personal portfolio website showcasing Ryan’s projects, skills, and experience in web development, design, and tech solutions.
+           Built to demonstrate a clean, modern, and responsive design.</p>
+        <ul>
+          <li>Fully responsive layout (desktop, tablet, mobile)</li>
+          <li>Interactive navigation and sections</li>
+          <li>Projects showcase with images and descriptions</li>
+          <li>Skills and services overview</li>
+         
+        </ul>
+        <a href="https://savageray.github.io/Ray_web/" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+     <div class="portfolio-card" data-category="Document Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672232/exin_vriy0t.png" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Document Design</span>
+        <h5>Ex-In Security Corporate Profile</h5>
+        <p>Professionally designed company profile for Ex-In Security, highlighting their history, services, and expertise in security solutions.</p>
+        <ul>
+          <li>Clean layout with corporate branding</li>
+          <li>Infographics and charts illustrating services and operations</li>
+          <li>Integrated company logo and color scheme</li>
+          <li>Print-ready PDF format</li>
+           <li>Professional typography for easy readability</li>
+        </ul>
+        <a href="./assets/files/EXIN COMPANY PROFILE_compressed.pdf" class="cta-btn">View / Download Project</a>
+      </div>
+    </div>
+
+
+    <div class="portfolio-card" data-category="Web Development">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672232/drum_rkswzy.png" alt="Java Drum Set" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Web Development</span>
+        <h5>Java Drum Set – Interactive Musical Application</h5>
+        <p>An interactive drum kit application built in Java that lets users play different
+           drum sounds using keyboard keys or mouse clicks. This project demonstrates event handling, object-oriented programming, and multimedia integration.</p>
+        <ul>
+          <li>Play drum sounds using keyboard keys or mouse clicks</li>
+          <li>Real-time response to user input with minimal latency</li>
+          <li>Object-oriented Java design for maintainability</li>
+          <li>Graphical interface with labeled drum buttons</li>
+          <li>Fun, educational tool to demonstrate event-driven programming</li>
+        </ul>
+        <a href="https://savageray.github.io/Drum_kit/" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+     
+    <div class="portfolio-card" data-category="Web Development">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672588/simon_glehus.png" alt="Simon game" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Web Development</span>
+        <h5>Simon Game</h5>
+        <p>A classic memory game implemented using JavaScript. Users must repeat 
+          increasingly complex sequences of colored buttons to test and improve their memory skills.</p>
+        <ul>
+          <li>Interactive color sequence gameplay</li>
+          <li>Progressive difficulty levels</li>
+          <li>Score tracking and reset functionality</li>
+          <li>Sound and visual feedback for each action</li>
+          <li>Responsive design for desktop and mobile</li>
+        </ul>
+        <a href="https://savageray.github.io/Simon_Game/" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="Graphic Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672233/joyful_nails_xybbki.png" alt="Joyful nails" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Graphic Design</span>
+        <h5>Joyful Nails Parlour</h5>
+        <p>Complete branding and graphic design for a beauty parlor, 
+          including logo, promotional materials, and social media assets.</p>
+        <ul>
+          <li>Custom logo design reflecting the brand’s identity</li>
+          <li>Branded social media graphics and post templates</li>
+          <li>Business cards and flyers for promotions</li>
+          <li>Color palette and typography guidelines for consistent branding</li>
+          <li>High-resolution files ready for print and digital use</li>
+        </ul>
+        <a href="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672233/Brown_and_White_Modern_Hair_Salon_Flyer_2_he2njg.png" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="Graphic Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763649385/Company_logo_klukvu.png" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Graphic Design</span>
+        <h5>RayTech Foundation Logos</h5>
+        <p>Professional logo design for RayTech
+           Foundation, representing tech innovation and modern solutions.</p>
+        <ul>
+          <li>Unique and memorable logo design</li>
+          <li>Scalable vector format for web and print</li>
+          <li>Clean, modern, and professional style</li>
+          <li>Color palette aligned with brand identity</li>
+          <li>Ready-to-use across digital platforms and print materials</li>
+        </ul>
+        <a href="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763649385/Company_logo_klukvu.png" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+
+     <div class="portfolio-card" data-category="Document Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763660838/alfacan_pzwhb9.png" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Document Design</span>
+        <h5>Alfacan Security – Company Profile Design</h5>
+        <p>A professionally designed company profile for a security firm highlighting services, structure, and brand identity.</p>
+        <ul>
+          <li>Professional multi-page company profile design</li>
+          <li>Clean security-themed layout (dark blues, greys, and safety tones)</li>
+          <li>Company overview and mission/vision sections</li>
+          <li>Detailed services breakdown (CCTV, access control, guarding, alarms, etc.)</li>
+          <li>Fully customized branding to match Alfacan Security’s identity</li>
+          <li>Printable and digital-friendly PDF formatting</li>
+        </ul>
+        <a href="./assets/files/ALFACAN Company profile_compressed.pdf" class="cta-btn">View / Download Project</a>
+      </div>
+    </div>
+
+
+    <div class="portfolio-card" data-category="Document Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672232/nexford_nnfpx3.png" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Document Design</span>
+        <h5>Nexford Security – Corporate Profile Design</h5>
+        <p>A professionally designed multi-page company profile created to present Nexford Security as a trusted provider of modern protection services. The profile blends strong branding, clear structure, 
+          and impactful visuals suitable for clients, partners, and investors.</p>
+        <ul>
+          <li>Modern, clean, and professional multi-page layout</li>
+          <li>Strong Nexford branding: colors, fonts, and logo styling</li>
+          <li>Company background, mission, and vision sections</li>
+          <li>Custom security-themed icons and illustrations</li>
+          <li>Comprehensive service overview (CCTV, guarding, alarms, patrols, access control, etc.)</li>
+          <li>Printable and digital-friendly PDF formatting</li>
+        </ul>
+        <a href="./assets/files/Nexford_compressed.pdf" class="cta-btn">View / Donwload Project</a>
+      </div>
+    </div>
+
+
+     <div class="portfolio-card" data-category="Document Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763672234/Oltau_jhrfaf.png" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Document Design</span>
+        <h5>Oltau Security – Company Profile Design</h5>
+        <p>A clean and authoritative company profile created for Oltau Security, 
+          showcasing their professionalism and reliability in providing security 
+          solutions. Designed with strong branding, 
+          organized sections, and visuals that communicate trust and efficiency.</p>
+        <ul>
+          <li>Professional multi-page layout with security-themed styling</li>
+          <li>Oltau brand colors, fonts, and logo integration</li>
+          <li>Company introduction, mission, and vision</li>
+          <li>Detailed breakdown of security services offered</li>
+          <li>Clear contact and inquiry page with call-to-action</li>
+          <li>Custom icons for quick visual communication</li>
+        </ul>
+        <a href="./assets/files/oltau profile 2022.final_compressed.pdf" class="cta-btn">View / Download Project</a>
+      </div>
+    </div>
+    
+    
+    <div class="portfolio-card" data-category="CCTV Installation">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763648983/Residential_e2vlxd.jpg" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">CCTV Installation</span>
+        <h5>Residential CCTV Installation - Lavington</h5>
+        <p>Location: Lavington, Nairobi</p>
+        <ul>
+          <li>Installed 16 high-definition bullet cameras for a 3-floor apartment building. Covered stairways, corridors, parking, and perimeter fence. Integrated a 24/7 recording NVR, UPS backup, and secure locked DVR cabinet.</li>
+        
+        </ul>
+        <!-- <a href="./assets/files/oltau profile 2022.final.pdf" class="cta-btn">View / Donwload Project</a> -->
+      </div>
+    </div>
+
+       <div class="portfolio-card" data-category="CCTV Installation">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763648982/office_qtdn5o.jpg" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">CCTV Installation</span>
+        <h5>Office CCTV & Access Control – Westlands</h5>
+        <p>Location: Westlands, Nairobi</p>
+        <ul>
+          <li>Installed 14 IP cameras for office surveillance (reception, work areas,
+             boardroom, and server room). Added RFID door access system, employee 
+             entry logs,
+             and remote monitoring dashboard for management.</li>
+        
+        </ul>
+        <!-- <a href="./assets/files/oltau profile 2022.final.pdf" class="cta-btn">View / Donwload Project</a> -->
+      </div>
+    </div>
+
+
+     <div class="portfolio-card" data-category="CCTV Installation">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763648983/CCTV-Alarm_lxkkuv.jpg" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">CCTV Installation</span>
+        <h5>Apartment Block Security System – Rongai</h5>
+        <p>Location: Ongata Rongai, Kajiado</p>
+        <ul>
+          <li>Installed a 4-camera Hikvision system covering the main gate, backyard, front door, and parking area. Included 1080p night-vision cameras, 1TB NVR storage, and mobile remote viewing setup for the homeowner.</li>
+        
+        </ul>
+        <!-- <a href="./assets/files/oltau profile 2022.final.pdf" class="cta-btn">View / Donwload Project</a> -->
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="CCTV Installation">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763648379/images_hthxoj.jpg" alt="Corporate Profile" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">CCTV Installation</span>
+        <h5>Retail Shop Surveillance Upgrade – Ruiru</h5>
+        <p>Location: Ruiru, Kiambu</p>
+        <ul>
+          <li>Upgraded the shop’s old analog cameras to a 15-camera IP system 
+            with motion detection, improved indoor coverage of the cashier area, 
+            shelves, and entrance. Added a 32-inch monitoring screen and 
+            optimized lighting for clear footage.</li>
+        
+        </ul>
+        <!-- <a href="./assets/files/oltau profile 2022.final.pdf" class="cta-btn">View / Donwload Project</a> -->
+      </div>
+    </div>
+
+     <div class="portfolio-card" data-category="Graphic Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763647813/cigali_mcll0e.png" alt="logo" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Graphic Design</span>
+        <h5>Cigali Care Logo</h5>
+        <p>A professional and friendly logo created for Cigali Care, a 
+          healthcare-focused brand. The design conveys trust, care, and approachability, 
+          suitable for digital and print applications.</p>
+        <ul>
+          <li>Clean and approachable design reflecting healthcare values</li>
+          <li>Scalable vector format for multiple uses</li>
+          <li>Color palette emphasizing trust and reliability</li>
+          <li>Versatile for social media, website, and print materials</li>
+          <li>Memorable and unique branding identity</li>
+        </ul>
+        <a href="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763647813/cigali_mcll0e.png" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="Graphic Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763647816/coffee_dgzur8.png" alt="logo" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Graphic Design</span>
+        <h5>Ace Coffee Go Brand</h5>
+        <p>A dynamic brand identity designed for Ace Coffee Go, a modern 
+          coffee shop and takeaway service. The branding reflects energy, 
+          freshness, and a contemporary coffee culture vibe.</p>
+        <ul>
+          <li>Vibrant and modern logo design for brand recognition</li>
+          <li>Scalable vector format for web, signage, and merchandise</li>
+          <li>Consistent typography for all branding materials</li>
+          <li>Cohesive color palette representing coffee and freshness</li>
+          <li>Adaptable for packaging, social media, and promotional items</li>
+        </ul>
+        <a href="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763647816/coffee_dgzur8.png" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card" data-category="Graphic Design">
+      <div class="portfolio-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763647813/Aura_v6bbv2.png" alt="logo" style="width:100%; border-radius:8px;">
+      </div>
+      <div class="portfolio-info">
+        <span class="badge">Graphic Design</span>
+        <h5>Aura Logo</h5>
+        <p>A sleek and minimalistic logo design for Aura, a lifestyle and 
+          wellness brand. The design conveys elegance, simplicity, and a 
+          modern aesthetic suitable for digital and print applications.</p>
+        <ul>
+          <li>Ready-to-use across social media, packaging, and promotional materials</li>
+          <li>Elegant typography that complements the logo mark</li>
+          <li>Harmonized color palette for brand identity</li>
+          <li>Scalable vector format for web and print</li>
+          <li>Clean and minimalist logo design</li>
+        </ul>
+        <a href="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763647813/Aura_v6bbv2.png" class="cta-btn">View Project</a>
+      </div>
+    </div>
+
+
+      
+    <!-- Add more cards here -->
+    
+  </div>
+</section>
+
+
+<!-- CERTIFICATES -->
+<section class="container py-5" id="certificates">
+  <h2 class="mb-4">Certificates & Achievements</h2>
+  <div class="certificates-grid d-flex flex-wrap justify-content-center gap-4">
+
+    <div class="certificate-card" data-category="Certificate">
+  <div class="certificate-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763646477/cert-2_hiy6nv.png" alt="Web Development Certificate" style="width:100%; border-radius:8px; max-width:300px;">
+  </div>
+  <div class="certificate-info p-3 text-center">
+    <h5>Computer Hardware Basics – Cisco</h5>
+    <p>Certificate demonstrating foundational skills in computer hardware, covering components, assembly,
+       troubleshooting, and maintenance, certified by Cisco.</p>
+    <a href="./assets/files/Hardware-cert.pdf" target="_blank" class="cta-btn">View Certificate</a>
+  </div>
+</div>
+
+ <div class="certificate-card" data-category="Certificate">
+  <div class="certificate-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763646481/Screenshot_2025-11-20_164556_gkdxvh.png" alt="Web Development Certificate" style="width:100%; border-radius:8px; max-width:300px;">
+  </div>
+  <div class="certificate-info p-3 text-center">
+    <h5>Computer Training – General</h5>
+    <p>Certificate recognizing completion of a comprehensive computer training program, covering essential software applications, 
+      basic troubleshooting, and effective computer usage skills.</p>
+    <a href="./assets/files/comp-cert.pdf" target="_blank" class="cta-btn">View Certificate</a>
+  </div>
+</div>
+
+   <div class="certificate-card" data-category="Certificate">
+  <div class="certificate-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763646477/Screenshot_2025-11-20_164007_cipgjw.png" alt="Web Development Certificate" style="width:100%; border-radius:8px; max-width:300px;">
+  </div>
+  <div class="certificate-info p-3 text-center">
+    <h5>IDS Training – Attendance Certificate</h5>
+    <p>Certificate awarded for attending the IDS training program, demonstrating participation in sessions covering industry standards, 
+      best practices, and practical insights in IT systems and solutions.</p>
+    <a href="./assets/files/IDS-cert.pdf" target="_blank" class="cta-btn">View Certificate</a>
+  </div>
+</div>
+
+
+   <div class="certificate-card" data-category="Certificate">
+  <div class="certificate-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763646480/Screenshot_2025-11-20_164346_iukc72.png" alt="Web Development Certificate" style="width:100%; border-radius:8px; max-width:300px;">
+  </div>
+  <div class="certificate-info p-3 text-center">
+    <h5>Introduction to Python – DataCamp</h5>
+    <p>Certificate awarded for completing the Introduction to Python course on DataCamp, covering Python fundamentals, data types,
+       control structures, and basic data manipulation skills.</p>
+    <a href="./assets/files/intro-cert.pdf" target="_blank" class="cta-btn">View Certificate</a>
+  </div>
+</div>
+
+   <div class="certificate-card" data-category="Certificate">
+  <div class="certificate-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763646478/Screenshot_2025-11-20_164236_wymho4.png" alt="Web Development Certificate" style="width:100%; border-radius:8px; max-width:300px;">
+  </div>
+  <div class="certificate-info p-3 text-center">
+    <h5>Intermediate Python – DataCamp</h5>
+    <p>Certificate awarded for completing the Intermediate Python course on DataCamp, building on core Python skills through modules on lists, dictionaries,
+       loops, functions, and importing & working with external libraries.</p>
+    <a href="./assets/files/intermediate-cert.pdf" target="_blank" class="cta-btn">View Certificate</a>
+  </div>
+</div>
+
+     <div class="certificate-card" data-category="Certificate">
+  <div class="certificate-image">
+    <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763645524/cert-1_fkf4va.png" alt="Web Development Certificate" style="width:100%; border-radius:8px; max-width:300px;">
+  </div>
+  <div class="certificate-info p-3 text-center">
+    <h5>Cybersecurity Awareness Training</h5>
+    <p>Certificate awarded for completing Cybersecurity Awareness Training, 
+      covering essential topics such as safe password practices, recognizing phishing attempts, data protection, 
+      secure internet usage, and workplace security protocols.</p>
+    <a href="./assets/files/cyber-cert.pdf" target="_blank" class="cta-btn">View Certificate</a>
+  </div>
+</div>
+    <!-- Add more certificate cards here -->
+
+  </div>
+</section>
+<section class="container py-5" id="certificates">
+  <!-- CREDIBILITY -->
+   <h2 class="mb-4">Credibility</h2>
+   <div class="credibility-card">
+   
+  <i class="fa-solid fa-building fa-3x"></i>
+  <h5>BRS Registration</h5>
+  <p>Our business registration with BRS is coming soon. We are committed to full compliance and transparency.</p>
+</div>
+
+<div class="credibility-card">
+  <i class="fa-solid fa-id-card fa-3x"></i>
+  <h5>KRA Registration</h5>
+  <p>Our business registration with KRA is coming soon. We are committed to full compliance and transparency.</p>
+</div>
+</section>
+
+
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <i class="fa-solid fa-globe fa-3x mb-3 text-primary"></i>
+            <h5>Web Development</h5>
+            <p>Custom websites, e-commerce solutions, and web apps tailored to your business needs.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <i class="fa-solid fa-paint-brush fa-3x mb-3 text-primary"></i>
+            <h5>Graphic Design</h5>
+            <p>Professional branding, logos, and marketing materials that make your business stand out.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <i class="fa-solid fa-file-lines fa-3x mb-3 text-primary"></i>
+            <h5>Document Design</h5>
+            <p>CVs, company profiles, and business documents that create powerful first impressions.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <i class="fa-solid fa-camera fa-3x mb-3 text-primary"></i>
+            <h5>CCTV Installation</h5>
+            <p>Reliable CCTV systems with installation, maintenance, and remote monitoring services.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <i class="fa-solid fa-tools fa-3x mb-3 text-primary"></i>
+            <h5>Hardware Maintenance</h5>
+            <p></p>
+            <p>Providing reliable hardware setup, troubleshooting, and maintenance solutions to ensure your systems run smoothly. From computer repairs to component upgrades, we keep your technology performing at its best.</p>
+          </div>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- TESTIMONIALS SECTION - Lively & Professional -->
+<section class="testimonials-section container fade-in">
+  <h2 class="section-title text-center">Client Testimonials</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="quote-icon">
+        <i class="fas fa-quote-left"></i>
+      </div>
+      <p class="testimonial-text">
+        "RayTech transformed our online presence with a stunning website that expanded our buiness! Professional from start to finish."
+      </p>
+      <div class="client-info">
+        <div class="client-avatar">VW</div>
+        <p class="testimonial-author">Vanessa W.<br><span>Business Consultant, Nairobi</span></p>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote-icon">
+        <i class="fas fa-quote-left"></i>
+      </div>
+      <p class="testimonial-text">
+        "The CCTV system installed by RayTech has given us complete peace of mind. Remote viewing on my phone works perfectly — highly recommended!"
+      </p>
+      <div class="client-info">
+        <div class="client-avatar">IE</div>
+        <p class="testimonial-author">Isaac E.<br><span>Apartment Manager, Rongai</span></p>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote-icon">
+        <i class="fas fa-quote-left"></i>
+      </div>
+      <p class="testimonial-text">
+        "Our company profile design exceeded all expectations. Clean, modern, and professional — RayTech truly understands branding."
+      </p>
+      <div class="client-info">
+        <div class="client-avatar">DW</div>
+        <p class="testimonial-author">David W.<br><span>Security Firm HR</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA SECTION -->
+<section class="cta-section container fade-in">
+  <h2>Ready to Elevate Your Business?</h2>
+  <p>Let's bring your vision to life with professional technology and design solutions tailored for you.</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/254712733412?text=Hi%20RayTech%20Foundation,%20I'm%20interested%20in%20your%20services!" target="_blank" class="btn-cta wa-btn">
+      <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+    <a href="contact.html" class="btn-cta">
+      Get a Free Quote
+    </a>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-content container">
+    <div class="footer-grid">
+      <!-- Company Info -->
+      <div class="footer-column">
+        <h4>RayTech Foundation</h4>
+        <p>Nairobi, Kenya</p>
+        <p>Empowering businesses through modern technology & design.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>
+          <i class="fas fa-phone"></i> 
+          <a href="tel:+254712733412">+254 712 733 412</a><br>
+          <a href="tel:+254792798796">+254 792 798 796</a>
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i> 
+          <a href="mailto:raytechfoundation@gmail.com">raytechfoundation@gmail.com</a>
+        </p>
+        <p>
+          <i class="fab fa-whatsapp"></i> 
+          <a href="https://wa.me/254712733412" target="_blank">Chat on WhatsApp</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom text-center">
+      <p>© 2026 RayTech Foundation. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+   // Hamburger Menu - Works on every page
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.navbar-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  }
+
+  // Fade-in on scroll
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.1 };
+  const appearOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        appearOnScroll.unobserve(entry.target);
+      }
+    });
+  }, appearOptions);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+
+  // Optional: Close menu when clicking a link (great for mobile)
+  document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+  // Particles (optional)
+    if (document.getElementById('particles-js')) {
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 80 },
+          color: { value: '#60A5FA' },
+          shape: { type: 'circle' },
+          opacity: { value: 0.4, random: true },
+          size: { value: 3, random: true },
+          line_linked: { enable: true, distance: 150, color: '#60A5FA', opacity: 0.2, width: 1 },
+          move: { enable: true, speed: 2 }
+        },
+        interactivity: { events: { onhover: { enable: true, mode: 'grab' } } },
+        retina_detect: true
+      });
+    }
+    // Portfolio filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.portfolio-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.filter;
+        cards.forEach(c => {
+          c.style.display = (cat === 'all' || c.dataset.category === cat) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+
+</a>
+</body>
+</html>

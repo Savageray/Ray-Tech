@@ -1,0 +1,452 @@
+:root {
+  --primary: #ffffff;       /* Buttons & headings */
+  --accent: #60A5FA;        /* Hovers */
+  --bg: #0F172A;            /* Background */
+  --card-bg: #1E293B;
+  --text-main: #FFFFFF;     /* All main text - pure white */
+  --text-secondary: #CBD5E1; /* Slightly softer for less important text (e.g., footer, descriptions) */
+  --subtle-glow: rgba(96, 165, 250, 0.3);
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Inter', Arial, sans-serif !important;
+  margin: 0;
+  background: #0F172A;
+  color: #FFFFFF;
+  line-height: 1.6;
+  overflow-x: hidden;
+  color: var(--text-main);  /* All body text white */
+}
+
+p, li, ul, ol, td, th, label, input, textarea, select {
+  color: var(--text-main);
+}
+
+/* Secondary text (captions, footer, subtle info) */
+.footer-content p,
+.service-description,
+.portfolio-info p,
+.testimonial-text,
+.client-name {
+  color: var(--text-secondary);
+}
+
+/* Keep headings with subtle accent glow */
+h1, h2, h3, h4, h5, h6, .big-title, .section-title {
+  color: var(--primary);
+  text-shadow: 0 0 6px var(--subtle-glow);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p, a, li, input, textarea, button, label {
+  font-weight: 500;
+}
+/* Inputs & form fields - light text on dark background */
+form input, form select, form textarea {
+  background: #1E293B;
+  color: var(--text-main);
+  border: 1px solid #334155;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #94A3B8;
+}
+.navbar {
+  background: linear-gradient(90deg, var(--bg), var(--primary));
+}
+
+.navbar-links a {
+  box-shadow: 0 0 6px var(--subtle-glow);
+  color: var(--text);
+}
+
+.navbar-links a:hover {
+  color: var(--accent);
+}
+
+.cta-btn, .btn-cta, .contact-btn, .cta-button, form button, .package-card .cta-button {
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--subtle-glow);
+  color: #0F172A;
+}
+
+.cta-btn:hover, .btn-cta:hover, .contact-btn:hover, .cta-button:hover, form button:hover {
+  background: var(--accent);
+  box-shadow: 0 0 15px var(--subtle-glow);
+}
+
+.service-card, .portfolio-card, .package-card, .stat-card, .certificate-card, .testimonial-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.service-card:hover, .portfolio-card:hover, .package-card:hover, .certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px var(--subtle-glow);
+}
+
+.pricing-table th {
+  background: var(--accent);
+}
+
+footer {
+  background: var(--bg);
+  color: #94A3B8;
+}
+.site-footer {
+  background: var(--bg);
+  color: #94A3B8;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #334155;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}
+
+.footer-content a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: var(--accent);
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  font-size: 30px;
+}
+/* Fix horizontal overflow and dark margin on small screens */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* prevents horizontal scroll */
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box; /* ensures padding doesn't add extra width */
+}
+
+/* Ensure no element causes overflow */
+.container, section, .page-hero, .founder-grid, .stats-grid, .services-grid, .grid-2 {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Specific fix for navbar if it overflows */
+.navbar {
+  flex-wrap: wrap; /* already has this, but confirm */
+  padding: 15px 20px; /* reduce side padding on small screens */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 15px;
+  }
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #0F172A, #3B82F6);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+  flex-wrap: wrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid #60A5FA;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.navbar-logo span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #60A5FA;
+  background: rgba(96, 165, 250, 0.15);
+}
+
+/* Hamburger */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  width: 28px;
+  height: 3px;
+  background: #60A5FA;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+.navbar-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    gap: 15px;
+    background: #0F172A;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-logo img {
+    height: 55px;
+    width: 55px;
+  }
+
+  .navbar-logo span {
+    font-size: 1.3rem;
+  }
+}
+/* FINAL BUTTONS - Beautiful & Consistent */
+.btn, .btn-cta, .cta-btn, .contact-btn, button[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: #3B82F6;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  transition: all 0.4s ease;
+  min-height: 56px;
+}
+
+.btn:hover, .btn-cta:hover, .cta-btn:hover, button[type="submit"]:hover, .contact-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.6);
+  background: #2563EB;
+}
+
+/* Shine sweep */
+/* .btn::before, .btn-cta::before, .cta-btn::before, button[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 1s ease;
+} */
+
+.btn:hover::before, .btn-cta:hover::before, .cta-btn:hover::before, button[type="submit"]:hover::before {
+  left: 100%;
+}
+
+/* WhatsApp Button */
+.wa-btn, .btn-whatsapp {
+  background: #25D366;
+}
+
+.wa-btn:hover, .btn-whatsapp:hover {
+  background: #128C7E;
+}
+
+/* Secondary / Outline */
+.btn-outline-primary, .btn-cta.secondary {
+  background: transparent;
+  border: 2px solid #3B82F6;
+  color: #3B82F6;
+}
+
+.btn-outline-primary:hover, .btn-cta.secondary:hover {
+  background: #3B82F6;
+  color: white;
+}
+
+/* Small buttons */
+.btn.small, .btn-cta.small {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+}
+
+/* Mobile full-width */
+@media (max-width: 768px) {
+  .btn, .btn-cta, .cta-btn, button[type="submit"] {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+.site-footer {
+  background: #0F172A;
+  color: #E0E0E0;
+  padding: 80px 20px 40px;
+  margin-top: 100px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-column h4 {
+  font-size: 1.4rem;
+  color: #60A5FA;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #E0E0E0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #60A5FA;
+}
+
+.footer-column p {
+  margin: 12px 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.footer-column a {
+  color: #60A5FA;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-column i {
+  margin-right: 10px;
+  color: #60A5FA;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 1px solid #334155;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-links {
+    display: inline-block;
+  }
+  
+  .footer-links li {
+    margin: 8px 0;
+  }
+}

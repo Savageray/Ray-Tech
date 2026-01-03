@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO -->
+  <title>RayTech Foundation - Contact Us</title>
+  <meta name="description" content="Contact RayTech Foundation for web development, graphic design, CCTV installation, document design, and tech support in Nairobi, Kenya. Get a free quote today.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763649385/Company_logo_klukvu.png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Particles.js (optional for hero) -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <!-- Page-specific CSS -->
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="./assets/css/global.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <header class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="navbar-logo">
+      <img src="https://res.cloudinary.com/dgj0jpgsc/image/upload/v1763649385/Company_logo_klukvu.png" alt="RayTech Foundation Logo">
+      <span>RayTech Foundation</span>
+    </a>
+    <div class="navbar-toggle" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <nav class="navbar-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div id="particles-js"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container text-center">
+      <h1 class="big-title">Contact Us</h1>
+      <p class="tagline">We're Here to Help</p>
+      <p class="hero-subtitle">Get in touch for a free consultation or quote — we respond fast!</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section container fade-in">
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="contact-info-card">
+        <h2>Get In Touch</h2>
+        <p>Ready to start your project? Reach out via any method below — we typically reply within hours.</p>
+        
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Location</strong><br>
+            Nairobi, Kenya
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>Phone</strong><br>
+            <a href="tel:+254712733412">+254 712 733 412</a><br>
+            <a href="tel:+254792798796">+254 792 798 796</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:raytechfoundation@gmail.com">raytechfoundation@gmail.com</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp</strong><br>
+            <a href="https://wa.me/254712733412" target="_blank">Chat Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="service">Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option>Web Development</option>
+                <option>Graphic Design & Branding</option>
+                <option>CCTV & Security Systems</option>
+                <option>Document Design</option>
+                <option>Tech Support & IT</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project, budget, timeline..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn-cta large">Send Message</button>
+        </form>
+        
+        <div id="formMessage" class="form-message" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section container fade-in">
+    <h2>Ready to Get Started?</h2>
+    <p>Fast response • Transparent pricing • Personal support</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/254712733412?text=Hi%20RayTech%20Foundation,%20I'm%20interested%20in%20your%20services!" target="_blank" class="btn-cta wa-btn">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+      <a href="tel:+254712733412" class="btn-cta">
+        <i class="fas fa-phone"></i> Call Now
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+  <div class="footer-content container">
+    <div class="footer-grid">
+      <!-- Company Info -->
+      <div class="footer-column">
+        <h4>RayTech Foundation</h4>
+        <p>Nairobi, Kenya</p>
+        <p>Empowering businesses through modern technology & design.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>
+          <i class="fas fa-phone"></i> 
+          <a href="tel:+254712733412">+254 712 733 412</a><br>
+          <a href="tel:+254792798796">+254 792 798 796</a>
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i> 
+          <a href="mailto:raytechfoundation@gmail.com">raytechfoundation@gmail.com</a>
+        </p>
+        <p>
+          <i class="fab fa-whatsapp"></i> 
+          <a href="https://wa.me/254712733412" target="_blank">Chat on WhatsApp</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom text-center">
+      <p>© 2026 RayTech Foundation. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  <!-- SCRIPTS -->
+  <script>
+    // EmailJS Init (your public key)
+    emailjs.init("vz9P5DdVKx7i27CNz");
+
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      formMessage.textContent = "Sending...";
+      formMessage.style.color = "#60A5FA";
+
+      const params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value || "Not provided",
+        service: document.getElementById("service").value || "Not specified",
+        message: document.getElementById("message").value
+      };
+
+      // Send to you (notification)
+      emailjs.send("service_xcktzh8", "template_jp59jg6", params)
+        .then(() => {
+          // Send auto-reply to client
+          return emailjs.send("service_xcktzh8", "template_qjh0qno", params);
+        })
+        .then(() => {
+          formMessage.textContent = "✅ Message sent successfully! We'll reply soon.";
+          formMessage.style.color = "#60A5FA";
+          contactForm.reset();
+        })
+        .catch((err) => {
+          formMessage.textContent = "❌ Error sending message. Please try WhatsApp or email.";
+          formMessage.style.color = "#ff6b6b";
+          console.error(err);
+        });
+    });
+
+    // Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.navbar-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Particles (optional)
+    if (document.getElementById('particles-js')) {
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 80 },
+          color: { value: '#60A5FA' },
+          shape: { type: 'circle' },
+          opacity: { value: 0.4, random: true },
+          size: { value: 3, random: true },
+          line_linked: { enable: true, distance: 150, color: '#60A5FA', opacity: 0.2, width: 1 },
+          move: { enable: true, speed: 2 }
+        },
+        interactivity: { events: { onhover: { enable: true, mode: 'grab' } } },
+        retina_detect: true
+      });
+    }
+
+    // Fade-in
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.1 };
+    const appearOnScroll = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>
